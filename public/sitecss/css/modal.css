@@ -1,0 +1,148 @@
+.modal { background-color: rgba(55, 62, 67,0.5);}
+.modal-content {
+	background-color: rgba(55, 62, 67,0.9);
+	box-shadow: 2px 2px 10px 0px #DDD;
+	border-radius: 5px;
+}
+.close {
+	color: #dedede;
+	font-size: 2rem;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+}
+.close:before {
+	content: "Close";
+	font-size: 1rem;
+	display: none;
+	text-decoration: none;
+	align-self: center;
+	margin-top: 0.2rem;
+	font-weight: 400;
+}
+.close:hover:before {
+	display: initial;
+	color: #dedede;
+}
+.close:hover,
+.close:focus {
+	color: hsl(0, 100%, 70%);
+	text-decoration: none;
+	cursor: pointer;
+}
+.close:active,
+.close:before:active {
+	transition: all 60ms ease;
+	transform: scale(0.97);
+}
+.modal-content {
+	display: flex;
+	flex-direction: column;
+}
+.modal-header {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+	font-size: 2em;
+    font-weight: bolder;
+    color: #fff;
+    font-weight: bolder;
+}
+.fa-lock{
+    color:#fff;
+    font-size: 36px;
+}
+.modal-body span,
+.modal-body label{color:#ee6f57;}
+.slideDownAnimation {
+	animation-name: slideDownAnimation;
+	-webkit-animation-name: slideDownAnimation;
+	animation-duration: 0.6s;
+	-webkit-animation-duration: 0.6s;
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+	visibility: visible !important;
+}
+@keyframes slideDownAnimation {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(4%);
+	}
+	65%{
+		transform: translateY(-2%);
+	}
+	80%{
+		transform: translateY(2%);
+	}
+	95%{
+		transform: translateY(-1%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+
+.step-Header{
+	color:#ee6f57;
+	font-weight: bolder;
+	text-align: center;
+}
+.progress-bar{
+	color: #fff;
+	background-color: #ee6f57;
+}
+
+
+  
+ 
+
+  
+  /* Hide all steps by default: */
+  .tab {
+	display: none;
+  }
+  
+  button {
+	background-color: #ee6f57;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 17px;
+	font-family: Raleway;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	opacity: 0.8;
+  }
+  
+  #prevBtn {
+	background-color: #bbbbbb;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbbbbb;
+	border: none;  
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 0.5;
+  }
+  
+  .step.active {
+	opacity: 1;
+	background-color: #ee6f57;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+	background-color: #ee6f57;
+  }

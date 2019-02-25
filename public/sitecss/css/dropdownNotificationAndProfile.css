@@ -1,0 +1,85 @@
+@import 'variablesColor.css' ;
+.profile-pic{
+  color:var(--whiteColor);
+}
+.profile-pic img {margin-top: -2px;}
+
+.dropdown-toggle:after{
+  display:none;
+}
+.fa-bell-o{
+  color: var(--whiteColor);
+  size:24px;
+}
+.profile-menu{
+  top:-30px!important;
+}
+.profile-menu .profile-body-items{
+  color:var(--blackcolor)!important;
+}
+.dropdown-menu{
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.profile-body-items:hover,
+.notification-menu .notification-body .notification-recieved:hover{
+  background-color: #DDD !important;
+}
+.notification-menu,.profile-menu{
+  width:300px;
+  color:var(--blackcolor);
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.notification-menu .notification-title,
+.profile-menu .profile-title{
+  background-color:var(--colorButton);
+  color: var(--whiteColor);
+  font-weight: bolder;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 50px; 
+}
+
+.notification-menu .notification-body,
+.profile-menu .profile-body{
+  background-color: var(--whiteColor);
+}
+.notification-menu .notification-body .notification-recieved{
+  border-bottom:1px solid rgba(0, 0, 0, 0.19); 
+}
+.notification-menu .notification-body .notification-recieved a {padding: 0px;}
+.notification-menu .notification-body .notification-recieved p{color:var(--colorSubText)}
+.notification-menu .notification-body .notification-recieved p span {
+  font-weight: bolder;
+}
+.notification-menu .notification-body .notification-recieved p.notification-time {
+  font-weight: bolder;
+  font-size:13px;
+  margin:2% 0;
+  text-align: left;
+}
+.notification-time {
+  opacity: 0.5;
+}
+.notification-menu .notification-footer{
+  background-color: var(--mainColor);
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 20px;
+  display: flex;
+}
+@media only screen and (max-width:770px){
+  #mobile-nav{left: -308px;width: 308px}
+  .fa-bell-o{margin-left:10px;}
+  p.notification-time{margin-top: -14%!important; }
+  .notification-menu,.profile-menu{box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0); }
+  .profile-menu{top:-77px!important;}
+  .notification-menu{top:-28px!important;}
+}
+.accept{
+  display: inline-block;
+}

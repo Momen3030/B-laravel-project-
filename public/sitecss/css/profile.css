@@ -1,0 +1,63 @@
+@import 'mainStyle.css' ;
+#header{
+    background-color: var(--mainColor);
+  
+}
+.badge{background-color: var(--colorButton)}
+.badge-important{
+    margin-left: 25px;
+    position: absolute;
+    color: var(--whiteColor);
+    font-weight: bolder;
+    padding: 2px 4px ;
+}
+
+.container-profile{
+    margin-top:10%;
+}
+.profile-image{
+    width:230px;
+    margin:auto;
+    padding: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container-profile .blood-Donation-info{
+    width:230px;
+    margin:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+  
+.container-profile .blood-Donation-info  div.header {
+    height: 200px;
+    background-color: var(--colorSubText);
+    color: var(--whiteColor);
+    padding: 27% 44%;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  
+  .container-profile .blood-Donation-info  div.footer {
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /*col 9   user info*/
+  .myInfo{
+      width:80%;
+      margin: auto;
+  }
+  div.odd{
+      background-color: var(--colorHover);
+      /* color: var(--whiteColor); */
+      color: rgb(248, 246, 246);
+  }
+  .valueOfInfo{
+      text-align: start;
+  }
+
+@media only screen and (max-width:770px){
+    .container-profile{margin-top:30%; }
+}
